@@ -1,11 +1,20 @@
 import CountUp from 'react-countup';
 import PerfectScrollbar from 'react-perfect-scrollbar';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { AgeCalculator } from 'src/utils/AgeCalculator';
 import { ProgressBar } from '@/components/common/ProcessBar';
 
 export const Sidebar: React.FC = () => {
+    const [age, setAge] = useState(0);
+
+    useEffect(() => {
+        setAge((state: number) => {
+            const age = AgeCalculator(new Date(2009, 6, 22));
+            return age;
+        });
+    }, []);
+
     return (
         <>
             <aside className='fixed top-0 h-screen w-[300px]'>
@@ -102,7 +111,7 @@ export const Sidebar: React.FC = () => {
                                         >
                                             <CountUp
                                                 start={0}
-                                                end={AgeCalculator(new Date(2009, 6, 22))}
+                                                end={age}
                                                 duration={1.5}
                                             >
                                                 {({ countUpRef }) => <span ref={countUpRef} />}
