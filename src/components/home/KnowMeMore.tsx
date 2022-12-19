@@ -53,8 +53,8 @@ export const KnowMeMore: React.FC = () => {
                             <p>
                                 &emsp;Hello! I’m Nat Mancharoen. Senior Full Stack Developer specializing in front end development.
                                 Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous
-                                programming languages including JavaScript, SQL, and C. Strong background in project management and customer
-                                relations.
+                                programming languages including JavaScript, SQL, and C#.NET. Strong background in project management and
+                                customer relations.
                             </p>
                         </div>
                         <div className='col-span-3 grid grid-cols-1 gap-4 xl:col-span-1 xl:gap-0'>
