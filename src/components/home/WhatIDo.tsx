@@ -42,15 +42,15 @@ export const WhatIDo: React.FC = () => {
                     animateIn='animate__flipInX'
                     animateOut='animate__flipOutX'
                 >
-                    <div className='flex rounded-xl border border-slate-800/60 bg-slate-800/30 p-4 transition-all hover:shadow-xl'>
+                    <div className='flex flex-col rounded-xl border border-slate-800/60 bg-slate-800/30 p-4 transition-all hover:shadow-xl md:flex-row'>
                         <div className='p-4'>
-                            <div className='w-[80px]'>
+                            <div className='m-auto w-[80px]'>
                                 <CircularProgressBar percent={94} />
                             </div>
                         </div>
-                        <div className='ml-4'>
-                            <h4 className='mt-2 font-semibold'>Back-End</h4>
-                            <p>
+                        <div className='md:ml-4'>
+                            <h4 className='mt-2 text-center font-semibold md:text-left'>Back-End</h4>
+                            <p className='text-center md:text-left'>
                                 Collaborating with the front-end developers and other team members to establish objectives and design more
                                 functional, cohesive codes to enhance the user experience. Participating in continuing education and
                                 training to remain current on best practices, learn new programming languages.
@@ -63,15 +63,15 @@ export const WhatIDo: React.FC = () => {
                     animateIn='animate__flipInX'
                     animateOut='animate__flipOutX'
                 >
-                    <div className='flex rounded-xl border border-slate-800/60 bg-slate-800/20 p-4 transition-all hover:shadow-xl'>
+                    <div className='flex flex-col rounded-xl border border-slate-800/60 bg-slate-800/30 p-4 transition-all hover:shadow-xl md:flex-row'>
                         <div className='p-4'>
-                            <div className='w-[80px]'>
+                            <div className='m-auto w-[80px]'>
                                 <CircularProgressBar percent={92} />
                             </div>
                         </div>
-                        <div className='ml-4'>
-                            <h4 className='mt-2 font-semibold'>Front-End</h4>
-                            <p>
+                        <div className='md:ml-4'>
+                            <h4 className='mt-2 text-center font-semibold md:text-left'>Font-End</h4>
+                            <p className='text-center md:text-left'>
                                 Develop responsive web applications by using Javascript frameworks. Coding and testing program modules to
                                 meet design specifications. Prepare Technical documents and Perform knowledge transfer to customer.
                             </p>
@@ -83,15 +83,15 @@ export const WhatIDo: React.FC = () => {
                     animateIn='animate__flipInX'
                     animateOut='animate__flipOutX'
                 >
-                    <div className='flex rounded-xl border border-slate-800/60 bg-slate-800/30 p-4 transition-all hover:shadow-xl'>
+                    <div className='flex flex-col rounded-xl border border-slate-800/60 bg-slate-800/30 p-4 transition-all hover:shadow-xl md:flex-row'>
                         <div className='p-4'>
-                            <div className='w-[80px]'>
+                            <div className='m-auto w-[80px]'>
                                 <CircularProgressBar percent={84} />
                             </div>
                         </div>
-                        <div className='ml-4'>
-                            <h4 className='mt-2 font-semibold'>System Analyst</h4>
-                            <p>
+                        <div className='md:ml-4'>
+                            <h4 className='mt-2 text-center font-semibold md:text-left'>System Analyst</h4>
+                            <p className='text-center md:text-left'>
                                 Assist with the design and testing of systems and use requirement documents and solution design to come up
                                 with technical specifications document. Work closely with a team of product owners, designers, and other
                                 engineers to build class-leading experiences for our customers.
@@ -104,15 +104,15 @@ export const WhatIDo: React.FC = () => {
                     animateIn='animate__flipInX'
                     animateOut='animate__flipOutX'
                 >
-                    <div className='flex rounded-xl border border-slate-800/60 bg-slate-800/30 p-4 hover:shadow-xl'>
+                    <div className='flex flex-col rounded-xl border border-slate-800/60 bg-slate-800/30 p-4 transition-all hover:shadow-xl md:flex-row'>
                         <div className='p-4'>
-                            <div className='w-[80px]'>
+                            <div className='m-auto w-[80px]'>
                                 <CircularProgressBar percent={86} />
                             </div>
                         </div>
-                        <div className='ml-4'>
-                            <h4 className='mt-2 font-semibold'>Team Management</h4>
-                            <p>
+                        <div className='md:ml-4'>
+                            <h4 className='mt-2 text-center font-semibold md:text-left'>Team Management</h4>
+                            <p className='text-center md:text-left'>
                                 Maintain processes to ensure project management documentation, reports and plans are relevant, accurate, and
                                 complete. Track and report on project portfolio performance, provide a real-time, comprehensive, and
                                 prioritized view of all projects.

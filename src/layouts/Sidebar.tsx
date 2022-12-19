@@ -9,7 +9,7 @@ export const Sidebar: React.FC = () => {
     const [age, setAge] = useState(0);
 
     useEffect(() => {
-        setAge((state: number) => {
+        setAge(() => {
             const age = AgeCalculator(new Date(2009, 6, 22));
             return age;
         });
@@ -17,8 +17,8 @@ export const Sidebar: React.FC = () => {
 
     return (
         <>
-            <aside className='fixed top-0 h-screen w-[300px]'>
-                <PerfectScrollbar className='space-y-8 pr-6'>
+            <aside className='fixed top-0 hidden h-screen w-[300px] lg:block'>
+                <PerfectScrollbar className='space-y-8 p-6'>
                     <ScrollAnimation
                         animateOnce={true}
                         animateIn='animate__zoomIn'

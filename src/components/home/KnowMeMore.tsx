@@ -49,7 +49,7 @@ export const KnowMeMore: React.FC = () => {
                     animateOut='animate__fadeOutUp'
                 >
                     <div className='mt-6 grid grid-cols-3 gap-6'>
-                        <div className='col-span-2'>
+                        <div className='col-span-3 xl:col-span-2'>
                             <p>
                                 &emsp;Hello! I’m Nat Mancharoen. Senior Full Stack Developer specializing in front end development.
                                 Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous
@@ -57,7 +57,7 @@ export const KnowMeMore: React.FC = () => {
                                 relations.
                             </p>
                         </div>
-                        <div className='col-span-1 grid grid-cols-1'>
+                        <div className='col-span-3 grid grid-cols-1 gap-4 xl:col-span-1 xl:gap-0'>
                             <div className='flex leading-none'>
                                 <span className='w-24 font-medium'>Age:</span>
                                 <span>{AgeCalculator(new Date(1984, 6, 22))} (June, 1984)</span>

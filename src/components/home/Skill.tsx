@@ -38,7 +38,7 @@ export const Skill: React.FC = () => {
                     </span>
                 </h2>
             </ScrollAnimation>
-            <div className='mt-6 grid grid-cols-7 gap-6 text-sm'>
+            <div className='mt-6 grid grid-cols-3 gap-6 text-sm md:grid-cols-5 xl:grid-cols-7'>
                 <ScrollAnimation
                     animateOnce={true}
                     animateIn='animate__bounceIn'

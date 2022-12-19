@@ -64,9 +64,9 @@ export const Certificate: React.FC = () => {
                     animateIn='animate__flipInX'
                     animateOut='animate__flipOutX'
                 >
-                    <div className='flex rounded-xl border border-slate-800/60 bg-slate-800/30 shadow-xl'>
+                    <div className='flex flex-col rounded-xl border border-slate-800/60 bg-slate-800/30 shadow-xl md:flex-row'>
                         <img
-                            className='w-1/4 rounded-l-xl border-4 border-r-0 border-slate-800/30'
+                            className='w-full rounded-t-xl md:w-1/4 md:rounded-l-xl md:rounded-r-none'
                             src='assets/bg-agile.jpeg'
                             alt=''
                         />
@@ -87,9 +87,9 @@ export const Certificate: React.FC = () => {
                     animateIn='animate__flipInX'
                     animateOut='animate__flipOutX'
                 >
-                    <div className='flex rounded-xl border border-slate-800/60 bg-slate-800/30 shadow-xl'>
+                    <div className='flex flex-col rounded-xl border border-slate-800/60 bg-slate-800/30 shadow-xl md:flex-row'>
                         <img
-                            className='w-1/4 rounded-l-xl border-4 border-r-0 border-slate-800/30'
+                            className='w-full rounded-t-xl md:w-1/4 md:rounded-l-xl md:rounded-r-none'
                             src='assets/bg-pdpa.jpeg'
                             alt=''
                         />
