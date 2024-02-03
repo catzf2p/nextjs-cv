@@ -318,7 +318,7 @@ Finally, we have to add the scripts in the package.json:
 
 Basically:
 
--   format: will call prettier to fix the code style.
+- format: will call prettier to fix the code style.
 
 Trying to manually run ESLint: Fix all auto-fixable Problems periodically is not very reliable. However, having lint rules run every time you save your work can be more reliable. You can set up ESLint to run auto-fix every time you press CTRL+S (or COMMAND+S).
 
