@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18.19.0'
+          node-version: '16'
 
       - name: Get yarn cache
         id: yarn-cache
@@ -36,7 +36,9 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn deploy
+        run: |
+          yarn build
+          yarn export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
