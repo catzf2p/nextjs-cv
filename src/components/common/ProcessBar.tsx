@@ -7,7 +7,8 @@ type ProgressBarProps = {
   title: string;
 };
 
-export const ProgressBar: React.FC<ProgressBarProps> = ({ duration, percent, title }) => {
+export const ProgressBar = (props: ProgressBarProps) => {
+  const { duration, percent, title } = props;
   const [durationState, setDurationState] = useState(1500);
   const [percentState, setPercentState] = useState(0);
   const [titleState, setTitleState] = useState('');

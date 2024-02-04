@@ -22,6 +22,8 @@
       "@/hooks/*": ["src/hooks/*"],
       "@/layouts": ["src/layouts"],
       "@/layouts/*": ["src/layouts/*"],
+      "@/models": ["src/models"],
+      "@/models/*": ["src/models/*"],
       "@/modules": ["src/modules"],
       "@/modules/*": ["src/modules/*"],
       "@/styles": ["src/styles"],

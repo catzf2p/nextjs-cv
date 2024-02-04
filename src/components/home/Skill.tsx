@@ -1,5 +1,7 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { Title } from '@/components/home/Title';
+import { CpuChipIcon } from '@heroicons/react/24/outline';
 
 const backends = [
   {
@@ -242,78 +244,48 @@ const renderBox = (item: { name: string; icon: string }) => {
 export const Skill: React.FC = () => {
   return (
     <>
-      <div className='w-ful min-w-full'>
-        <ScrollAnimation
-          animateOnce={true}
-          animateIn='animate__fadeInUp'
-          animateOut='animate__fadeOutUp'
-        >
-          <h2 className='inline-flex items-center text-3xl font-normal'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='mr-4'
-              width='48'
-              height='48'
-              viewBox='0 0 24 24'
-              strokeWidth='1'
-              stroke='currentColor'
-              fill='none'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-            >
-              <path
-                stroke='none'
-                d='M0 0h24v24H0z'
-                fill='none'
-              ></path>
-              <path d='M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1'></path>
-              <path d='M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2'></path>
-              <path d='M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2'></path>
-              <path d='M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z'></path>
-              <path d='M16.746 16.726a3 3 0 1 0 .252 -5.555'></path>
-            </svg>
-            <span className='bg-gradient-to-r from-purple-500 to-blue-700 bg-clip-text text-3xl font-bold text-transparent'>
-              Technical skills
-            </span>
-          </h2>
-        </ScrollAnimation>
-        <h4 className='mt-2 text-center font-semibold md:text-left'>Programming Languages</h4>
+      <div className='w-ful min-w-full space-y-6'>
+        <Title
+          icon={<CpuChipIcon />}
+          text='Technical skills'
+        />
+        <h4 className='mt-2 text-center font-normal md:text-left'>Programming Languages</h4>
         <div className='my-6 grid grid-cols-2 gap-6 text-sm sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-8'>
           {programmingLanguages.map((item) => {
             return renderBox(item);
           })}
         </div>
-        <h4 className='mt-2 text-center font-semibold md:text-left'>Front-End</h4>
+        <h4 className='mt-2 text-center font-normal md:text-left'>Front-End</h4>
         <div className='my-6 grid grid-cols-2 gap-6 text-sm sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-8'>
           {frontends.map((item) => {
             return renderBox(item);
           })}
         </div>
-        <h4 className='mt-2 text-center font-semibold md:text-left'>Back-End</h4>
+        <h4 className='mt-2 text-center font-normal md:text-left'>Back-End</h4>
         <div className='my-6 grid grid-cols-2 gap-6 text-sm sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-8'>
           {backends.map((item) => {
             return renderBox(item);
           })}
         </div>
-        <h4 className='mt-2 text-center font-semibold md:text-left'>Databases</h4>
+        <h4 className='mt-2 text-center font-normal md:text-left'>Databases</h4>
         <div className='my-6 grid grid-cols-2 gap-6 text-sm sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-8'>
           {databases.map((item) => {
             return renderBox(item);
           })}
         </div>
-        <h4 className='mt-2 text-center font-semibold md:text-left'>Developer tools</h4>
+        <h4 className='mt-2 text-center font-normal md:text-left'>Developer tools</h4>
         <div className='my-6 grid grid-cols-2 gap-6 text-sm sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-8'>
           {developerTools.map((item) => {
             return renderBox(item);
           })}
         </div>
-        <h4 className='mt-2 text-center font-semibold md:text-left'>DevOps and CI/CD</h4>
+        <h4 className='mt-2 text-center font-normal md:text-left'>DevOps and CI/CD</h4>
         <div className='my-6 grid grid-cols-2 gap-6 text-sm sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-8'>
           {devops.map((item) => {
             return renderBox(item);
           })}
         </div>
-        <h4 className='mt-2 text-center font-semibold md:text-left'>Computer operating systems</h4>
+        <h4 className='mt-2 text-center font-normal md:text-left'>Computer operating systems</h4>
         <div className='my-6 grid grid-cols-2 gap-6 text-sm sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-8'>
           {operatingSystems.map((item) => {
             return renderBox(item);

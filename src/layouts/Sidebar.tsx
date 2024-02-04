@@ -16,11 +16,8 @@ export const Sidebar: React.FC = () => {
 
   return (
     <>
-      <aside className='fixed top-0 bottom-0 hidden h-full w-[300px] lg:block'>
-        <PerfectScrollbar
-          className='bg-red bg-red w-full p-6'
-          options={{ scrollingThreshold: 1 }}
-        >
+      <aside className='lg:fixed lg:top-0 lg:h-full lg:w-[300px]'>
+        <PerfectScrollbar className='bg-red bg-red w-full p-6'>
           <div className='space-y-8'>
             <ScrollAnimation
               animateOnce={true}
@@ -44,7 +41,6 @@ export const Sidebar: React.FC = () => {
                 </p>
               </div>
             </ScrollAnimation>
-            <div className=''></div>
             <ScrollAnimation
               animateOnce={true}
               animateIn='animate__fadeIn'
@@ -90,54 +86,51 @@ export const Sidebar: React.FC = () => {
                 </div>
               </div>
             </ScrollAnimation>
-            <div className=''></div>
-            <div className='flex justify-center'>
-              <ScrollAnimation
-                animateOnce={true}
-                animateIn='animate__rubberBand'
-              >
+            <ScrollAnimation
+              animateOnce={true}
+              animateIn='animate__rubberBand'
+            >
+              <div className='flex justify-center'>
                 <button
                   type='button'
-                  className='inline-flex px-6 text-xl text-white'
+                  className='grow rounded-lg bg-gradient-to-r from-purple-500 to-blue-700 px-6 py-4 lg:bg-none'
                 >
-                  <span className='uppercase drop-shadow-xl'>
-                    <a
-                      href='assets/cv.pdf'
-                      target='_blank'
-                    >
-                      Download CV
-                    </a>
-                  </span>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='ml-4'
-                    width='24'
-                    height='24'
-                    viewBox='0 0 24 24'
-                    strokeWidth='2'
-                    stroke='currentColor'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
+                  <a
+                    className='flex justify-center text-xl text-white'
+                    href='assets/cv.pdf'
+                    target='_blank'
                   >
-                    <path
-                      stroke='none'
-                      d='M0 0h24v24H0z'
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      className='mr-2'
+                      width='24'
+                      height='24'
+                      viewBox='0 0 24 24'
+                      strokeWidth='2'
+                      stroke='currentColor'
                       fill='none'
-                    ></path>
-                    <path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2'></path>
-                    <polyline points='7 11 12 16 17 11'></polyline>
-                    <line
-                      x1='12'
-                      y1='4'
-                      x2='12'
-                      y2='16'
-                    ></line>
-                  </svg>
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    >
+                      <path
+                        stroke='none'
+                        d='M0 0h24v24H0z'
+                        fill='none'
+                      ></path>
+                      <path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2'></path>
+                      <polyline points='7 11 12 16 17 11'></polyline>
+                      <line
+                        x1='12'
+                        y1='4'
+                        x2='12'
+                        y2='16'
+                      ></line>
+                    </svg>
+                    <span>Download CV</span>
+                  </a>
                 </button>
-              </ScrollAnimation>
-            </div>
-            <div className=''></div>
+              </div>
+            </ScrollAnimation>
           </div>
         </PerfectScrollbar>
       </aside>

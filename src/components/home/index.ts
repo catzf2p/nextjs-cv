@@ -3,4 +3,5 @@ export * from './Education';
 export * from './Experience';
 export * from './KnowMeMore';
 export * from './Skill';
+export * from './Title';
 export * from './WhatIDo';

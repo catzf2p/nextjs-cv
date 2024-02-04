@@ -7,20 +7,38 @@ type ProgressBarProps = {
   percent: number;
 };
 
-export const CircularProgressBar: React.FC<ProgressBarProps> = ({ duration, percent }) => {
-  const [durationState, setDurationState] = useState(1500);
-  const [percentState, setPercentState] = useState(0);
+type ProgressProviderProps = {
+  start: number;
+  end: number;
+  children: (value: number) => JSX.Element;
+};
+
+const ProgressProvider = (props: ProgressProviderProps) => {
+  const { start, end, children } = props;
+  const [curValue, setCurValue] = useState(start);
 
   useEffect(() => {
-    setDurationState(duration ?? 1500);
-    setPercentState(percent);
+    setCurValue(end);
+  }, [end]);
+
+  return children(curValue);
+};
+
+export const CircularProgressBar = (props: ProgressBarProps) => {
+  const { duration, percent } = props;
+  const [curDuration, setCurDuration] = useState(1500);
+  const [curPercent, setCurPercent] = useState(0);
+
+  useEffect(() => {
+    setCurDuration(duration ?? 1500);
+    setCurPercent(percent);
   });
 
   return (
     <>
       <ProgressProvider
-        valueStart={10}
-        valueEnd={percentState}
+        start={10}
+        end={curPercent}
       >
         {(value: number) => {
           return (
@@ -35,7 +53,7 @@ export const CircularProgressBar: React.FC<ProgressBarProps> = ({ duration, perc
                   textColor: '#bfdbfe',
                   pathColor: '#162451',
                   trailColor: 'transparent',
-                  pathTransitionDuration: durationState / 1000,
+                  pathTransitionDuration: curDuration / 1000,
                 })}
               />
             </>
@@ -45,18 +63,3 @@ export const CircularProgressBar: React.FC<ProgressBarProps> = ({ duration, perc
     </>
   );
 };
-
-type ProgressProviderProps = {
-  valueStart: number;
-  valueEnd: number;
-  children: (value: number) => JSX.Element;
-};
-
-function ProgressProvider({ valueStart, valueEnd, children }: ProgressProviderProps) {
-  const [value, setValue] = React.useState(valueStart);
-  React.useEffect(() => {
-    setValue(valueEnd);
-  }, [valueEnd]);
-
-  return children(value);
-}
