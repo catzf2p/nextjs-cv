@@ -29,7 +29,7 @@ export const Sidebar: React.FC = () => {
                   <img
                     src='assets/avatar-nat.jpeg'
                     alt='Nat Mancharoen'
-                    className='h-22 w-22 rounded-full border-4 border-slate-900 object-cover'
+                    className='h-32 w-32 rounded-full border-4 border-slate-900 object-cover'
                   />
                 </div>
                 <h5 className='mt-4 text-xl font-medium'>Nat Mancharoen</h5>

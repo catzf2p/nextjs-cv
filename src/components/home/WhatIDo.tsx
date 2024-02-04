@@ -1,7 +1,7 @@
 import { Card } from '@/models/WhatIDo';
 import { CircularProgressBar } from '@/components/common';
 import { Title } from '@/components/home/Title';
-import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
+import { LightBulbIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -66,7 +66,7 @@ export const WhatIDo: React.FC = () => {
     <>
       <div className='mt-6 grid gap-6'>
         <Title
-          icon={<CursorArrowRaysIcon />}
+          icon={<LightBulbIcon />}
           text='What I Do'
         />
         {cards.map((card) => {

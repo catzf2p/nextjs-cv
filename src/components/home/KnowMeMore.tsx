@@ -2,14 +2,14 @@ import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { AgeCalculator } from '@/utils';
 import { Title } from './Title';
-import { FaceSmileIcon } from '@heroicons/react/24/outline';
+import { SparklesIcon } from '@heroicons/react/24/outline';
 
 export const KnowMeMore: React.FC = () => {
   return (
     <>
       <div className='w-ful min-w-full space-y-6'>
         <Title
-          icon={<FaceSmileIcon />}
+          icon={<SparklesIcon />}
           text='Know Me More'
         />
         <ScrollAnimation
