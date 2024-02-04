@@ -1,4 +1,4 @@
-import { Certificate, Education, Experience, KnowMeMore, Skill, WhatIDo } from '@/components/home';
+import { Certificate, Education, Experience, KnowMeMore, TechnicalSkill, WhatIDo } from '@/components/home';
 import { NextPage } from 'next';
 import { Sidebar } from '../layouts/Sidebar';
 
@@ -11,7 +11,7 @@ const Index: NextPage = () => {
           <div className='space-y-10 p-6 lg:pl-[310px]'>
             <KnowMeMore />
             <WhatIDo />
-            <Skill />
+            <TechnicalSkill />
             <Education />
             <Experience />
             <Certificate />

@@ -1,7 +1,7 @@
-import IJob from '@/types/Job';
+import Experience from '@/models/Experience';
 
-const getList = (): Promise<IJob[]> => {
-  const jobs: IJob[] = [
+const getList = (): Promise<Experience[]> => {
+  const items: Experience[] = [
     {
       company: 'B2C Activation Co., Ltd.',
       position: 'Web Developer',
@@ -83,14 +83,14 @@ const getList = (): Promise<IJob[]> => {
     },
   ];
 
-  return new Promise<IJob[]>((resolve, reject) => {
-    resolve(jobs);
+  return new Promise<Experience[]>((resolve, reject) => {
+    resolve(items);
     reject(null);
   });
 };
 
-const JobService = {
+const ExperienceService = {
   getList,
 };
 
-export default JobService;
+export default ExperienceService;

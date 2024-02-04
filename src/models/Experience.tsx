@@ -1,4 +1,4 @@
-export default interface IJob {
+export default interface Experience {
   company: string;
   position: string;
   startAt: string;

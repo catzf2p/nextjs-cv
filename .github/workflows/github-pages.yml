@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions:
       contents: write
     concurrency:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '20.x'
+          node-version: '16'
 
       - name: Get yarn cache
         id: yarn-cache
@@ -36,7 +36,9 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn deploy
+        run: |
+          yarn build
+          yarn export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
