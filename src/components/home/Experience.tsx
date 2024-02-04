@@ -1,13 +1,13 @@
 import * as shortid from 'shortid';
-import Experience from '@/models/Experience';
+import ExperienceModel from '@/models/Experience';
 import React, { useEffect, useState } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { ComputerDesktopIcon, MinusIcon } from '@heroicons/react/24/outline';
+import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import { Title } from '@/components/home/Title';
 import { ExperienceService } from '@/services';
 
 export const Experience: React.FC = () => {
-  const [items, setItems] = useState<Experience[]>([]);
+  const [items, setItems] = useState<ExperienceModel[]>([]);
 
   const getData = async () => {
     const data = await ExperienceService.getList();
