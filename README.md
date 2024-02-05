@@ -477,7 +477,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18.19.0'
 
       - name: Get yarn cache
         id: yarn-cache
@@ -491,18 +491,19 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Installing dependencies
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Build
         run: |
           yarn build
           yarn export
+          touch out/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./out
 ```
