@@ -22,7 +22,6 @@ export const Sidebar: React.FC = () => {
             <ScrollAnimation
               animateOnce={true}
               animateIn='animate__zoomIn'
-              animateOut='animate__zoomOut'
             >
               <div className='flex flex-col items-center'>
                 <div className='header-photo mt-6'>
@@ -44,7 +43,6 @@ export const Sidebar: React.FC = () => {
             <ScrollAnimation
               animateOnce={true}
               animateIn='animate__fadeIn'
-              animateOut='animate__fadeOut'
             >
               <div className='flex justify-center rounded-xl border border-slate-800/60'>
                 <div className='relative m-4 h-44 w-full'>
@@ -52,7 +50,6 @@ export const Sidebar: React.FC = () => {
                     <ScrollAnimation
                       animateOnce={true}
                       animateIn='animate__zoomIn'
-                      animateOut='animate__zoomOut'
                     >
                       <div className='h-28 w-28 rounded-full bg-gradient-to-r from-blue-500 to-rose-500'></div>
                     </ScrollAnimation>
@@ -62,7 +59,6 @@ export const Sidebar: React.FC = () => {
                       <ScrollAnimation
                         animateOnce={true}
                         animateIn='animate__flipInY'
-                        animateOut='animate__flipOutY'
                       >
                         <CountUp
                           start={0}
@@ -77,7 +73,6 @@ export const Sidebar: React.FC = () => {
                       <ScrollAnimation
                         animateOnce={true}
                         animateIn='animate__zoomIn'
-                        animateOut='animate__zoomOut'
                       >
                         Years of Experiance
                       </ScrollAnimation>

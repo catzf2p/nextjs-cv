@@ -29,7 +29,7 @@ export const Certificate: React.FC = () => {
             <>
               <ScrollAnimation
                 animateOnce={true}
-                animateIn='animate__bounce'
+                animateIn='animate__fadeIn'
               >
                 <div className='flex flex-col rounded-xl border border-slate-800/60 bg-slate-800/30 shadow-xl md:flex-row'>
                   <img
@@ -37,10 +37,15 @@ export const Certificate: React.FC = () => {
                     src={item.imageUrl}
                     alt=''
                   />
-                  <div className='flex flex-col p-6'>
-                    <h5 className='text-lg font-bold'>{item.title}</h5>
-                    <p className='mt-2'>{item.description}</p>
-                  </div>
+                  <ScrollAnimation
+                    animateOnce={true}
+                    animateIn='animate__flipInX'
+                  >
+                    <div className='flex flex-col p-6'>
+                      <h5 className='text-lg font-bold'>{item.title}</h5>
+                      <p className='mt-2'>{item.description}</p>
+                    </div>
+                  </ScrollAnimation>
                 </div>
               </ScrollAnimation>
             </>

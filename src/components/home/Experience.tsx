@@ -1,10 +1,10 @@
-import * as shortid from 'shortid';
+import { Title } from '@/components/home/Title';
 import ExperienceModel from '@/models/Experience';
+import { ExperienceService } from '@/services';
+import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import React, { useEffect, useState } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
-import { Title } from '@/components/home/Title';
-import { ExperienceService } from '@/services';
+import * as shortid from 'shortid';
 
 export const Experience: React.FC = () => {
   const [items, setItems] = useState<ExperienceModel[]>([]);
@@ -44,10 +44,7 @@ export const Experience: React.FC = () => {
                       {experience.responsibilities.map((responsibility: string) => {
                         return (
                           <li key={shortid.generate()}>
-                            <div className='inline-flex items-baseline'>
-                              <span className='mr-1 h-4 w-4'>-</span>
-                              <span className='align-middle'>{responsibility}</span>
-                            </div>
+                            <span className='align-middle'>- {responsibility}</span>
                           </li>
                         );
                       })}

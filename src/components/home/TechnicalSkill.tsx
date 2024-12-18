@@ -35,7 +35,6 @@ export const TechnicalSkill: React.FC = () => {
                       <ScrollAnimation
                         animateOnce={true}
                         animateIn='animate__bounceIn'
-                        animateOut='animate__bounceOut'
                       >
                         <div className='flex flex-col items-center justify-center rounded-xl border border-slate-800/60 bg-slate-800/30 p-4 transition-all hover:scale-110 hover:shadow-xl'>
                           <i className={`${item.icon} text-3xl`}></i>

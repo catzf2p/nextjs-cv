@@ -14,7 +14,7 @@ export const KnowMeMore: React.FC = () => {
         />
         <ScrollAnimation
           animateOnce={true}
-          animateIn='animate__fadeInUp'
+          animateIn='animate__zoomIn'
         >
           <div className='mt-6 grid grid-cols-3 gap-6'>
             <div className='col-span-3 xl:col-span-2'>
