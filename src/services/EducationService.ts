@@ -9,8 +9,8 @@ const getList = (): Promise<Education[]> => {
     },
     {
       start: 'March 2009',
-      title: 'Bachelor&apos;s degree',
-      description: 'I graduated with a Bachelor&apos;s degree(B. Sc.) from Thepsatri Rajabhat',
+      title: 'Bachelor\'s degree',
+      description: 'I graduated with a Bachelor\'s degree(B. Sc.) from Thepsatri Rajabhat',
     },
   ];
 
