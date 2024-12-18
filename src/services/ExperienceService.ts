@@ -63,7 +63,7 @@ const getList = (): Promise<Experience[]> => {
       endAt: '2021',
       responsibilities: [
         'Involved in the full Life Cycle of the project including Architecture, Analysis Design, Development, Debugging, Testing and Deployment.',
-        'Involved in full Software development life-cycle (SDLC) followed by agile methodologies to produce high quality software model using N-Tier Architecture.',
+        'Involved in full Software development life-cycle (SDLC) followed by agile methodologies to produce high quality software models using N-Tier Architecture.',
         'Rebuilt and enhanced existing Web Applications and Web Services with JavaScript and .NET Technology.',
         'Designed and implemented Web Applications using HTML5, CSS3, Angular, React, TypeScript and TailwindCSS',
         'Designed and implemented Web Services using C#.NET, .NET Core, .NET 6 and Node.js.',
@@ -76,7 +76,7 @@ const getList = (): Promise<Experience[]> => {
         'Created RESTful endpoints to Cache application specific data in in-memory data clusters like Redis and exposed them with RESTful endpoints by using Redis Cache.',
         'Worked with Grafana to visualize the data by creating dashboards.',
         'Monitor cpu, mem, http status, network traffic and other important metrics of API.',
-        'Built a team of developers from scratch by interviewing, training and mentoring them.',
+        'Build a team of developers from scratch by interviewing, training and mentoring them.',
         'Reviewed system test scenarios & test cases.',
         'Used Git for Version Control.',
       ],
